@@ -32,20 +32,22 @@ var articles = {
                 Hello!How are you?
             </p>`
      },
-    'article-three': { title : 'Article-one',
-    heading: 'article-one',
-    content : `<p>
+    'article-three': { 
+        title : 'Article-three',
+        heading: 'article-three',
+        content: `<p>
                 this is the content for my article.
-            </p>
-            <p>
-                This is the best thing ever.yeah!!
-            </p>
-            <p>
-                Hello!How are you?
-            </p>`},
+                </p>
+                <p>
+                    This is the best thing ever.yeah!!
+                </p>
+                <p>
+                    Hello!How are you?
+                </p>`
+        }
 };
     
-}
+
 function createTemplate(data){
 var title = data.title;
 var content = data.content;
