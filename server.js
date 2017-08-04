@@ -16,7 +16,7 @@ var articleOne ={
             </p>
             <p>
                 Hello!How are you?
-            </p>`
+            </p>`;
 };
 
 function createTemplate(data){
