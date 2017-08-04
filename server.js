@@ -5,9 +5,9 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne ={
-    title : 'Article-one'
-    heading: 'article-one'
+var articleOne = {
+    title : 'Article-one',
+    heading: 'article-one',
     content : `<p>
                 this is the content for my article.
             </p>
@@ -16,7 +16,7 @@ var articleOne ={
             </p>
             <p>
                 Hello!How are you?
-            </p>`;
+            </p>`
 };
 
 function createTemplate(data){
@@ -24,7 +24,7 @@ var title = data.title;
 var content = data.content;
 var heading = data.heading;
 var htmlTemplate = 
-<html>
+`<html>
     <head>
         <title> ${title}</title>
         <link href="/ui/style.css" rel="stylesheet" />
@@ -44,8 +44,8 @@ var htmlTemplate =
         </div>
      </div>    
     </body>
-</html>
-;
+</html>`
+
 return htmlTEmplate;
 };
 app.get('/', function (req, res) {
