@@ -6,5 +6,5 @@ element.innerHTML = "New Value";
 
 var image = document.getElementById("madi");
 image.onclick = function() {
-    image.style.marginLeft = "120"
+    image.style.marginLeft = "120";
 }
