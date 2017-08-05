@@ -17,9 +17,21 @@ image.onclick = function() {
 var button = document.getElementById("button");
 var counter = 0;
 button.onclick = function(){
+    
+  var request = new XMLhttpRequest();
  
-  
-  counter = counter + 1;
-  var count = document.getElementById("count");
-  count.innerHTML = counter.toString();
+  request.onreadystatechange = function(){
+    
+    if(request.readyState === XMLhttpRequest.DONE){
+        if(request.status === 200){
+           var counter =  request.responseText;
+           counter = counter + 1;
+           var count = document.getElementById("count");
+           count.innerHTML = counter.toString();
+        }
+    }
+    
+  }; 
+  request.open('GET', 'http://silentworkeratwork.imad.hasura-app.io/counter',true);
+  request.send(null);
 };
