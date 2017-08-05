@@ -49,13 +49,13 @@ var articles = {
     
 
 function createTemplate(data){
-var title = data.title;
+var titles = data.title;
 var content = data.content;
 var heading = data.heading;
 var htmlTemplate = 
 `<html>
     <head>
-        <title> ${title}</title>
+        <title> ${titles}</title>
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
