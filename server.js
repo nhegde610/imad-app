@@ -17,28 +17,12 @@ var articles = {
     'article-one': {
     title: 'Article-one',
     heading: 'article-one',
-    content : `<p>
-                this is the content for my article.
-            </p>
-            <p>
-                This is the best thing ever.yeah!!
-            </p>
-            <p>
-                Hello!How are you?
-            </p>`
+    content : ``
 },
     'article-two': { 
     title: 'Article-two',
     heading: 'article-two',
-    content : `<p>
-                this is the content for my article.
-            </p>
-            <p>
-                This is the best thing ever.yeah!!
-            </p>
-            <p>
-                Hello!How are you?
-            </p>`
+    content : ``
      },
     'article-three': { 
         title: 'Article-three',
@@ -75,6 +59,9 @@ var htmlTemplate =
             <h3>
                 ${heading}
             </h3>
+        </div>
+        <div>
+            ${date.toDateString()}
         </div>
         <div>
            ${content}
