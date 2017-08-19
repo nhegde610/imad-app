@@ -17,16 +17,35 @@ var articles = {
     'article-one': {
     title: 'Article-one',
     heading: 'article-one',
-    content : ``
+    date: 'Sep 10,2017',
+    content : `<p>
+                this is the content for my article.
+            </p>
+            <p>
+                This is the best thing ever.yeah!!
+            </p>
+            <p>
+                Hello!How are you?
+            </p>`
 },
     'article-two': { 
     title: 'Article-two',
     heading: 'article-two',
-    content : ``
+    date : 'sep 10,2017',
+    content : `<p>
+                this is the content for my article.
+            </p>
+            <p>
+                This is the best thing ever.yeah!!
+            </p>
+            <p>
+                Hello!How are you?
+            </p>`
      },
     'article-three': { 
         title: 'Article-three',
         heading: 'article-three',
+        date: 'august 23,2017',
         content: `<p>
                 this is the content for my article.
                 </p>
